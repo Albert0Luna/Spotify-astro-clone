@@ -1,0 +1,70 @@
+---
+import PlayListItemCard from '@/components/PlayListItemCard.astro';
+import Layout from '../../layouts/Layout.astro';
+
+import { allPlaylists, songs } from "@/lib/data"
+import MusicsTables from '@/components/MusicsTables.astro';
+import { CardPlayButton } from '@/components/CardPlayButton';
+
+const { id } = Astro.params
+
+const playlist = allPlaylists.find(playlist => playlist.id === id)
+const playListSongs = songs.filter(songs => songs.albumId === playlist?.albumId)
+
+---
+
+<Layout title="Spotify Clone">
+ <div
+  id="playlist-container"
+  class="relative flex flex-col bg-zinc-900 h-full overflow-x-hidden"
+  transition:name=`playlist ${id} box`
+ >
+<!-- PageHeader -->
+
+ <header class="flex flex-row gap-8 px-6 mt-10">
+		<picture class="aspect-square flex-none w-52 h-52">
+			<img 
+				src={playlist?.cover} 
+				alt={`Cover of ${playlist?.title}`}
+				class="object-cover w-full h-full shadow-lg"
+				transition:name=`playlist ${playlist?.id} image`
+				>
+	</picture>
+
+		<div class="flex flex-col justify-between">
+			<h1 class="flex flex-1 items-end text-white/60">Playlist</h1>
+			<div>
+					<h1 class="text-6xl font-extrabold block">
+						{playlist?.title}
+						<span transition:name=`playlist ${playlist?.id} title`></span>
+					</h1>
+			</div>
+
+			<div class="flex-1 flex items-end">
+				<div class="text-sm text-gray-300 font-normal">
+					<div transition:name=`playlist ${id} artists`>
+						<span>{playlist?.artists.join(', ')}</span>
+					</div>
+					<p class="mt-1">
+						<span class="text-white">{playListSongs.length} canciones</span>, 3 h aproximadamente
+					</p>
+				</div>
+			</div>
+		</div>
+ </header>
+
+ <div class="relative z-10 px-6 pt-10"></div>
+ 
+ <div 
+    class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-10">
+</div>
+
+<section class="p-6">
+	<MusicsTables songs={playListSongs}/>
+</section>
+
+</Layout>
+
+<style>
+
+</style>
