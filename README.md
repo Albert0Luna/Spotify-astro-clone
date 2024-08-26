@@ -1,22 +1,41 @@
-Clon de Spotify con Astro, Svelte y Tailwind CSS 🎵
-¡Bienvenido a este proyecto de clon de Spotify creado con Astro, Svelte y Tailwind CSS! 🚀
+# Spotify Clone with Astro, Svelte, and Tailwind CSS 🎵
 
-Tecnologías Utilizadas:
-Astro: Un marco de construcción de sitios web ultrarrápido que combina las ventajas de la generación de sitios estáticos y la representación del lado del cliente.
-Svelte: Un marco de JavaScript declarativo y reactivo para construir interfaces de usuario eficientes.
-Tailwind CSS: Un conjunto de utilidades de estilo de bajo nivel que te permiten construir diseños personalizados sin abandonar tu archivo HTML.
-HTML, CSS, y JS: Utilizados para la estructura, estilos y lógica de la aplicación.
-Zustand: Un estado global para React que es fácil de usar y ligero, manteniendo la gestión del estado sencilla y eficiente.
-Características:
-🎧 Reproducción de música en tiempo real.
-🎨 Interfaz de usuario moderna y atractiva.
-📊 Gestión eficiente del estado con Zustand.
-🚀 Rendimiento optimizado con Astro.
-🎉 Estilos personalizados con Tailwind CSS.
-Cómo Contribuir:
-🍴 ¡Forkea este repositorio!
-👯 Clona tu fork en tu máquina local: git clone https://github.com/Albert0Luna/Spotify-clone-astro.git
-📦 Instala las dependencias: npm install
-🚀 ¡Empieza a codificar y mejora el proyecto!
-🔃 Crea un Pull Request describiendo tus cambios.
-¡Esperamos tus contribuciones y sugerencias! Siéntete libre de abrir problemas para discutir nuevas características o informar sobre errores.
+## Welcome to this Spotify clone project built with Astro, Svelte, and Tailwind CSS! 🚀
+
+### Technologies Used:
+
+    - Astro: An ultra-fast website building framework that combines the advantages of static site generation and client-side rendering.
+
+    - Svelte: A declarative and reactive JavaScript framework for building efficient user interfaces.
+
+    - Tailwind CSS: A set of low-level utility style classes that allow you to build custom designs without leaving your HTML file.
+
+    - HTML, CSS, and JS: Used for the structure, styles, and logic of the application.
+
+    - Zustand: A global state management solution for React that is easy to use and lightweight, keeping state management simple and efficient.
+
+### Features:
+
+    - 🎧 Real-time music playback.
+
+    - 🎨 Modern and attractive user interface.
+
+    - 📊 Efficient state management with Zustand.
+
+    - 🚀 Optimized performance with Astro.
+
+    - 🎉 Custom styles with Tailwind CSS.
+
+### How to Contribute:
+
+    - 🍴 Fork this repository!
+
+    - 👯 Clone your fork to your local machine: git clone https://github.com/Albert0Luna/Spotify-clone-astro.git
+
+    - 📦 Install the dependencies: npm install
+
+    - 🚀 Start coding and improve the project!
+
+    - 🔃 Create a Pull Request describing your changes.
+
+### We welcome your contributions and suggestions! Feel free to open issues to discuss new features or report bugs.
