@@ -3,7 +3,7 @@ import { getPlayListInfoById } from "@/services/ApiService";
 import { Pause, Play } from "@/icons/PlayerIcons"
 
 
-export function CardPlayButton({ id, size = 'small' }: { id: string, size?: 'small' | 'medium' }) {
+export function CardPlayButton({ id, size = 'small' }: { id: string | undefined, size?: 'small' | 'medium' | 'large' }) {
 	const {
 		currentMusic,
 		isPlaying,
