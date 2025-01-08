@@ -3,7 +3,7 @@
     "@astrojs/react": "3.0.9",
     "@astrojs/svelte": "5.0.3",
     "@astrojs/tailwind": "5.1.0",
-    "@astrojs/vercel": "6.1.2",
+    "@astrojs/vercel": "^8.0.1",
     "@radix-ui/react-slider": "1.1.2",
     "@types/react": "18.2.46",
     "@types/react-dom": "18.0.6",
