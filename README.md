@@ -38,4 +38,4 @@
 
     - 🔃 Create a Pull Request describing your changes.
 
-### We welcome your contributions and suggestions! Feel free to open issues to discuss new features or report bugs.
+### We welcome your contributions and suggestions! Feel free to open issues to discuss new features or report bugs. Based on a midudev tutorial
